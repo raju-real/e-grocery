@@ -1,0 +1,10 @@
+<?php 
+Route::get('bazar_list','ApiController@bazarList');
+Route::get('modify_bazar_list/{token}','ApiController@modifyBazarList');
+Route::get('user_bazar_list/{token}','ApiController@modifiedBazarlist');
+Route::post('add_bazarlist_product/{token}','ApiController@addBazarList');
+Route::delete('single_product_clear/{token}/{product_id}','ApiController@singleItemClear');
+Route::get('increment_bazarlist_item/{token}/{product_id}','ApiController@incrementBazarlist');
+Route::post('decrement_bazarlist_item/{token}','ApiController@decrementBazarlist');
+Route::get('checkout_bazarlist/{token}','ApiController@checkoutBazarList');
+Route::post('place_bazarlist_order/{token}','ApiController@placeBazarListOrder');

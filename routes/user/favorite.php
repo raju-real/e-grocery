@@ -1,0 +1,12 @@
+<?php
+Route::get('add_to_favorite/{product_id}','WishListController@addToFavorite')
+     ->name('add_to_favorite');
+Route::get('favorite_list','WishListController@favoriteList')
+	->name('favorite_list');
+Route::get('remove_favorite/{product_id}','WishListController@removeFavorite')
+  	->name('remove_favorite');
+Route::get('clear_wishlist','WishListController@clearWishlist')
+  	->name('clear_wishlist');
+Route::get('f_t_c/{product_id}/{price}','WishListController@favoriteToCart')->name('f_t_c');
+Route::get('add_on_cart','WishListController@addOnCart')
+	->name('add_on_cart');
